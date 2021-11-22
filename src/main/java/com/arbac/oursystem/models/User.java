@@ -26,4 +26,9 @@ public class User extends com.arbac.oursystem.models.Entity {
     @Setter
     @Column(name = "EMAIL")
     private String email;
+
+    @Getter
+    @Setter
+    @Column(name = "VERIFIED")
+    private Boolean verified;
 }

@@ -23,6 +23,7 @@ create table user
     full_name varchar(255) null,
     owner_id  bigint       not null,
     email     varchar(255) null,
+    verified  boolean      default false,
     constraint foreign_key_owner_user foreign key (owner_id) references owner (id)
 );
 -- ######################### SAMPLE DATA #########################
